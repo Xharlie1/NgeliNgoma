@@ -1,9 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://ngelingoma.vercel.app/', // replace with actual domain
+    siteUrl: 'https://ngelingoma.vercel.app/', // change to your actual site URL
     generateRobotsTxt: true,
-    sitemapSize: 10000, // Increases the max entries per sitemap to 10,000
-    changefreq: 'weekly',
-    priority: 0.7,
+    sitemapSize: 7000,
   };
   
