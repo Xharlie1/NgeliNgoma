@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ngelingoma.vercel.app/
+
+# Sitemaps
+Sitemap: https://ngelingoma.vercel.app/sitemap.xml

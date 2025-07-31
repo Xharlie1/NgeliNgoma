@@ -40,16 +40,7 @@ const Footer = () => {
               <Image src={assets.instgram} alt='Instagram' width={24} height={24} className='transition-transform duration-200 group-hover:scale-110' /> {/* Added width/height, hover scale */}
               Instagram
             </a>
-            {/* TikTok Link */}
-            <a
-              href='https://www.tiktok.com/@estherzulu371?fbclid=IwY2xjawK5xANleHRuA2FlbQIxMABicmlkETBLS2VENmp4a1pyWm1xaEFyAR5gyxXGx48RmybNrjUNm9LSk2PDGKyUH6_-d9-esyWa0TVLrhWTSMuJuJ1J4A_aem_shlRmj_mGOLwZVdhpUQzvA'
-              target="_blank"
-              rel="noopener noreferrer"
-              className='flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors duration-200 group'
-            >
-              <Image src={assets.tiktok} alt='TikTok' width={24} height={24} className='transition-transform duration-200 group-hover:scale-110' /> {/* Added width/height, hover scale */}
-              TikTok
-            </a>
+          
             {/* Facebook Link */}
             <a
               href='https://www.facebook.com/estherzulu0110?_rdc=1&_rdr#'
