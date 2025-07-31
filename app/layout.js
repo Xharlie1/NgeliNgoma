@@ -14,6 +14,12 @@ const ovo = Ovo({
   variable: "--font-ovo",
 });
 
+// ✅ Move viewport to a separate export
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 // SEO & metadata config
 export const metadata = {
   title: "Ngeli Ngoma | Model & Advocate",
@@ -29,7 +35,7 @@ export const metadata = {
   ],
   creator: "Ngeli Ngoma",
   authors: [{ name: "Ngeli Ngoma", url: "https://ngelingoma.vercel.app/" }],
-  metadataBase: new URL("https://ngelingoma.vercel.app/"), 
+  metadataBase: new URL("https://ngelingoma.vercel.app/"),
   openGraph: {
     title: "Ngeli Ngoma | Model & Advocate",
     description:
@@ -38,7 +44,7 @@ export const metadata = {
     siteName: "Ngeli Ngoma",
     images: [
       {
-        url: "https://ngelingoma.vercel.app/BG.jpg", 
+        url: "https://ngelingoma.vercel.app/BG.jpg",
         width: 1200,
         height: 630,
         alt: "Ngeli Ngoma posing as a model and helping kids",
@@ -55,15 +61,12 @@ export const metadata = {
     creator: "@NgeliNgoma", // Replace with real handle
     images: ["https://ngelingoma.vercel.app/BG27.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${outfit.variable} ${ovo.variable}`}>
-      <body
-        className="font-sans antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white"
-      >
+      <body className="font-sans antialiased leading-8 overflow-x-hidden dark:bg-darkTheme dark:text-white">
         <main>{children}</main>
       </body>
     </html>
