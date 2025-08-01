@@ -32,7 +32,7 @@ const Footer = () => {
           <div className='flex flex-col gap-4'>
             {/* Instagram Link */}
             <a
-              href='https://www.instagram.com/esther_zulu_3/?fbclid=IwY2xjawK5xFxleHRuA2FlbQIxMABicmlkETBLS2VENmp4a1pyWm1xaEFyAR6oXv6nU81bbTnkvK2kNk7ngQ2zCyTszhRe_u1KOF9O9H8DCT3JkcvBHBDHAQ_aem_DgxSj6mLU7T2Vr6wffEV7w#'
+              href='https://www.instagram.com/princess_ngeli_ngoma?igsh=MWhyveDkxbXjrZHBncw=='
               target="_blank" // Open in new tab
               rel="noopener noreferrer" // Security best practice
               className='flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors duration-200 group' // Increased gap, hover effect
@@ -43,7 +43,7 @@ const Footer = () => {
           
             {/* Facebook Link */}
             <a
-              href='https://www.facebook.com/estherzulu0110?_rdc=1&_rdr#'
+              href='https://www.facebook.com/profile.php?id=61576649690055'
               target="_blank"
               rel="noopener noreferrer"
               className='flex items-center gap-3 text-gray-300 hover:text-purple-400 transition-colors duration-200 group'
