@@ -1,21 +1,23 @@
-import {  NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
-export function middleware(request){
-    const {pathname} = request.nextUrl;
-    const allowed = ['/Coming-Soon',];
-    const isStatic = 
-    pathname.startsWith('/_next') || 
-    pathname.startsWith('/favicon.ico') || 
-    pathname.startsWith('/_images');
+const isMaintenanceMode = false; // 👈 turn OFF
 
-    if (allowed.includes(pathname)
-    || isStatic
-    ){
-        return NextResponse.next();
-    }
-    //redirect everything to coming soon page
-    const url = request.nextUrl.clone();
-    url.pathname = '/Coming-Soon';
-    return NextResponse.redirect(url);
-     
+export function middleware(request) {
+  if (!isMaintenanceMode) {
+    return NextResponse.next();
+  }
+
+  const { pathname } = request.nextUrl;
+
+  if (
+    pathname.startsWith("/Coming-Soon") ||
+    pathname.startsWith("/_next")
+  ) {
+    return NextResponse.next();
+  }
+
+  const url = request.nextUrl.clone();
+  url.pathname = "/Coming-Soon";
+
+  return NextResponse.redirect(url);
 }
